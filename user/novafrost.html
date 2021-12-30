@@ -33,33 +33,44 @@
         </a>
       </li>
       <li>
-        <a href="" id="phonenb" value="0767178267">
-          Phone Number
+        <a href="" id="phonenb" value="0767178267" onclick="copyToClipboard('phonenb')">
+          0767178267
         </a>
       </li>
       <li>
         <a href="">
-          và cả những thứ bạn muốn nói trong bio nàyyy
+          NovaTap vip hơn TaoTap =)))
         </a>
       </li>
     </ul>
 
-    <p>Nova đẹp trai ( ͡ㆆ ͜ʖ ͡ㆆ) </p>
+    <p>Nova vẫn đẹp trai ( ͡ㆆ ͜ʖ ͡ㆆ) </p>
     <script>
-      function myFunction() {
-        /* Get the text field */
-        var copyText = document.getElementById("phonenb");
-        
-        /* Select the text field */
-        copyText.select(); /* For mobile devices */
-      
-        /* Copy the text inside the text field */
-        navigator.clipboard.writeText(copyText.value);
-        
-        /* Alert the copied text */
-        alert("Đã copy: " + copyText.value);
-      }
+    function copyToClipboard(elementId) {
+
+    // Create a "hidden" input
+    var aux = document.createElement("input");
+
+    // Assign it the value of the specified element
+    aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+
+    // Append it to the body
+    document.body.appendChild(aux);
+
+    // Highlight its content
+    aux.select();
+
+    // Copy the highlighted text
+    document.execCommand("copy");
+
+    // Remove it from the body
+    document.body.removeChild(aux);
+
+    var copyText=aux;
+
+    alert("Đã copy số điện thoại");
+    }
       </script>
   </body>
-  
+
 </html>
