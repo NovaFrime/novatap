@@ -4,11 +4,11 @@ body {
   font-family: "Josefin Sans", "Arial", sans-serif;
   background-image: url("../images/bg1.jpg");
   background-size: cover;
-
 }
 
 h1, p {
   color: #ffffff;
+  text-shadow: 0.5px 0.5px #66e0ff;
 }
 
 p {
