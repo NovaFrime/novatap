@@ -2,19 +2,19 @@ body {
   text-align: center;
   margin-top: 40px;
   font-family: "Josefin Sans", "Arial", sans-serif;
-  background-image: url("../images/bg1.jpg");
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+  background-image: url("../images/bg2.png");
   background-size: cover;
 
 }
 
 h1, p {
   color: #ffffff;
+  text-shadow: 2px 2px #000000;
 }
 
 p {
   font-size: 22px;
+
 }
 
 .profile-photo {
