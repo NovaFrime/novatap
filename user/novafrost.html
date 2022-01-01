@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/style/style-1.css">
     <link rel="prec onnect" href="https://fonts.gstatic.com">
     <script src="app.js"></script>
+    <link rel="icon" type="image/x-icon" href="novatap.ico">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
   </head>
 
@@ -48,28 +49,28 @@
     <script>
     function copyToClipboard(elementId) {
 
-    // Create a "hidden" input
-    var aux = document.createElement("input");
+// Create a "hidden" input
+var aux = document.createElement("input");
 
-    // Assign it the value of the specified element
-    aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+// Assign it the value of the specified element
+aux.setAttribute("value", document.getElementById(elementId).innerHTML);
 
-    // Append it to the body
-    document.body.appendChild(aux);
+// Append it to the body
+document.body.appendChild(aux);
 
-    // Highlight its content
-    aux.select();
+// Highlight its content
+aux.select();
 
-    // Copy the highlighted text
-    document.execCommand("copy");
+// Copy the highlighted text
+document.execCommand("copy");
 
-    // Remove it from the body
-    document.body.removeChild(aux);
+// Remove it from the body
+document.body.removeChild(aux);
 
-    var copyText=aux;
+var copyText=aux;
 
-    alert("Đã copy số điện thoại");
-    }
+alert("Đã copy !");
+}
       </script>
   </body>
 
