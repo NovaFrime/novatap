@@ -15,7 +15,7 @@ body {
 }
 
 #notfound .notfound {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -31,7 +31,7 @@ body {
 }
 
 .notfound .notfound-404 {
-  position: relative;
+  position: fixed;
   height: 180px;
   margin-bottom: 20px;
   z-index: -1;
@@ -59,7 +59,7 @@ body {
 
 .notfound .notfound-404 h2 {
   font-family: 'Montserrat', sans-serif;
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 110px;
