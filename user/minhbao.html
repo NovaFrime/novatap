@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title>Trần Nguyễn Minh Bảo</title>
+<!-- using style 1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <link rel="stylesheet" href="/style/style-4.css">
+    <link rel="prec onnect" href="https://fonts.gstatic.com">
+    <script src="app.js"></script>
+    <meta property=’og:title’ content='NovaTap'/>
+    <meta content="Novatap sang xịn mịn" name="description" />
+    <link rel="icon" type="image/x-icon" href="../novatap.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <meta property='og:image' content='https://raw.githubusercontent.com/NovaFrime/novatap/main/images/img.png'/>
+    <meta property=’og:description’ content='Novatap tuyệt vời'/>
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='627' />
+    <meta property="og:type" content='website'/>
+
+  </head>
+
+  <body>
+    <div id="particles-js" class="behind"></div>
+					<script type="text/javascript" src="../js/particles.js"></script>
+  					<script type="text/javascript" src="../js/app.js"></script>
+    <img class="profile-photo" src="../images/img4.jpg" alt="Ảnh xinh đẹp tuyệt vời" />
+
+    <h1>Trần Nguyễn Minh Bảo</h1>
+
+
+    <ul class="link-tree">
+      <li>
+
+        <a href="https://www.facebook.com/daylaminhbaoooo">
+          Facebook
+
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/tnmb.nhtt/">
+          Instagram
+        </a>
+      </li>
+      <li>
+        <a href="" value="0832747402" onclick="copyToClipboard('phonenb')">
+          Số điện thoại
+        </a>
+      </li>
+    </ul>
+    <h2 id="phonenb" hidden>0362329340</h2>
+
+    
+    <script>
+    function copyToClipboard(elementId) {
+
+// Create a "hidden" input
+var aux = document.createElement("input");
+
+// Assign it the value of the specified element
+aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+
+// Append it to the body
+document.body.appendChild(aux);
+
+// Highlight its content
+aux.select();
+
+// Copy the highlighted text
+document.execCommand("copy");
+
+// Remove it from the body
+document.body.removeChild(aux);
+
+var copyText=aux;
+
+alert("Đã copy !");
+}
+      </script>
+  </body>
+
+</html>
