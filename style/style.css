@@ -3,7 +3,8 @@ body {
   margin-top: 40px;
   font-family: "Josefin Sans", "Arial", sans-serif;
   background: rgb(63, 63, 63);
-
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 h1, p {
