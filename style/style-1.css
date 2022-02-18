@@ -91,3 +91,6 @@ p {
   -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
   transition: opacity .8s ease, transform 1.4s ease
 }
+.hidden {
+  opacity: 0;
+}
