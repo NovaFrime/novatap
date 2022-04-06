@@ -15,35 +15,162 @@
     <meta property='og:image:width' content='1200' />
     <meta property='og:image:height' content='627' />
     <meta property="og:type" content='website'/>
+    <style>
+      .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 10px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.mySlides {display: none;}
+
+    </style>
+    
   </head>
 
-  <body>
-    <div id="particles-js" class="behind"></div>
+  <body onclick="plusSlides(1)">
+    <div id="particles-js" class="behind" ></div>
 					<script type="text/javascript" src="js/particles.js"></script>
   					<script type="text/javascript" src="js/app.js"></script>
     <img class="profile-photo" src="./images/img.png" alt="Ảnh xinh đẹp tuyệt vời" />
 
     <h1>Cảm ơn bạn đã ghé thăm MC HealthCare</h1>
 
-    <p>Trang hỗ trợ sức khỏe do học sinh trường THPT tạo ra</p>
+    <p>Trang hỗ trợ sức khỏe do học sinh trường THPT Marie Curie tạo ra</p>
 
     <ul class="link-tree">
       <li>
         <a href="healthcare\checker.html">
-          Disease Checker
+          Disease Checker (EN)
         </a>
       </li>
       <li>
         <a href="healthcare\covidmap.html">
-          Covid Map
-        </a>
-      </li>
-      <li>
-        <a href="">
-          Pill Identifier
+          Covid Map (EN)
         </a>
       </li>
     </ul>
+
+    <div class="slideshow-container" >
+
+      <div class="mySlides" >
+        <q>Khó khăn không trường tồn, chỉ có con người cứng rắn trường tồn.</q>
+        
+        <p class="author">- Khuyết Danh</p>
+      </div>
+      
+      <div class="mySlides" >
+        <q>Khó khăn nào rồi cũng qua. Cũng giống như sau cơn mưa, trời lại sáng.</q>
+        <p class="author">- Khuyết Danh</p>
+      </div>
+      
+      <div class="mySlides" >
+        <q >Ta không hề thất bại. Chẳng phải ta đã tìm ra 10,000 cách sai rồi sao ?</q>
+        <p class="author">- Thomas A. Edison</p>
+      </div>
+      <div class="mySlides" >
+        <q >Dù không muốn mình lớn lên nhưng bạn vẫn phải trưởng thành. Vì vậy hãy mạnh mẽ mà trưởng thành.</q>
+        <p class="author">- Khuyết Danh</p>
+      </div>
+      <div class="mySlides">
+        <q >Nếu như bạn bị rớt lại phía sau, hãy chạy nhanh hơn. Không bao giờ bỏ cuộc, không bao giờ đầu hàng, hãy chống lại nghịch cảnh.</q>
+        <p class="author">- Khuyết Danh</p>
+      </div>
+      <div class="mySlides" >
+        <q >Vinh quang không phải là không bao giờ thất bại, mà là cách chúng ta đứng dậy sau mỗi lần gục ngã.</q>
+        <p class="author">- Khuyết Danh</p>
+      </div>
+      <div class="mySlides" >
+        <q >Cố gắng và hối hận, cái nào đau đớn hơn?</q>
+        <p class="author">- Khuyết Danh</p>
+      </div>
+      <div class="mySlides" >
+        <q >Sống cho hết đời thanh xuân.</q>
+        <p class="author">- BCTM</p>
+      </div>
+      <script>
+        var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+
+
+}
+
+
+
+
+
+      </script>
   </body>
-  <footer>Contact holyprime1985@gmail.com for more information.</footer>  
+
 </html>
