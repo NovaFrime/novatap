@@ -5,6 +5,8 @@ body {
   background: rgb(63, 63, 63);
   background-position: center center;
   background-repeat: no-repeat;
+  background-image: url("../images/img3.jpg");
+
 }
 
 h1, p {
@@ -30,47 +32,84 @@ p {
 }
 
 .link-tree > li {
-  margin: 12px 0;
+  margin: 22px 0;
 }
 
 .link-tree >li a {
-  color: #364652;
-  background: #C7DBE6;
-  border-radius: 6px;
+  background-color: rgba(110, 110, 110, 0.178);
+  color: white;
   padding: 12px;
   text-decoration: none;
   max-width: 360px;
   width: 90%;
   display: block;
   margin: 0 auto;
+
 } 
 
 
 .link-tree > li:nth-child(1) a {
-  background: #73ff00;
+  border-style: solid;
 }
 
 .link-tree > li:nth-child(2) a {
-  background: #ff00d4;
+
+  border-style: solid;
 }
 
 .link-tree > li:nth-child(3) a {
-  background: #00a6ff;
+
+  border-style: solid;
+}
+.link-tree > li:nth-child(4) a {
+
+  border-style: solid;
 }
 
-.link-tree > li:nth-child(4) a {
-  background: #88ff00;
-}
 .link-tree > li:nth-child(5) a {
-  background: #ff0000;
+  background: #70ffe0;border-style: solid;
 }
-.link-tree > li:nth-child(5) a {
-  background: #00f7ff;
+.link-tree > li:nth-child(6) a {
+  background: #a17fff;border-style: solid;
+}
+.link-tree > li:nth-child(7) a {
+  background: #00f7ff;border-style: solid;
+}
+.link-tree > li:nth-child(8) a {
+  background: #ff4646;border-style: solid;
+}
+.link-tree > li:nth-child(9) a {
+  background: #4671ff;border-style: solid;
 }
 .link-tree > li a:hover,
 .link-tree > li a:focus {
   color: white;
-  background: RoyalBlue;
+  background: rgba(122, 122, 122, 0.466);
+  box-shadow: 0 7px 17px rgba(0, 174, 255, 1);
+}
+.link-tree > li:nth-child(1) a:hover,
+.link-tree > li:nth-child(1) a:focus {
+  color: white;
+  background: rgba(122, 122, 122, 0.466);
+  box-shadow: 0 1px 22px rgba(0, 174, 255, 1);
+}
+.link-tree > li:nth-child(2) a:hover,
+.link-tree > li:nth-child(2) a:focus {
+  color: white;
+  background: rgba(122, 122, 122, 0.466);
+  box-shadow: 0 1px 22px rgba(255, 0, 221, 1);
+}
+.link-tree > li:nth-child(3) a:hover,
+.link-tree > li:nth-child(3) a:focus {
+  color: white;
+  background: rgba(122, 122, 122, 0.5);
+  box-shadow: 0 1px 22px rgba(255, 0, 85, 2);
+}
+.link-tree > li:nth-child(4) a:hover,
+.link-tree > li:nth-child(4) a:focus {
+  color: white;
+  background: rgba(122, 122, 122, 0.5);
+  box-shadow: 0 1px 22px rgba(255, 0, 85, 2);
 }
 #particles-js {
   width: 100%;
