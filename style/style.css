@@ -3,13 +3,15 @@ body {
   margin-top: 40px;
   font-family: "Josefin Sans", "Arial", sans-serif;
   background-position: center center;
-  background-repeat: no-repeat;
-  background-image: url("../images/img3.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-image: url("../images/img2.jpg");
 
 }
 
 h1, p {
   color: #ffffff;
+  text-shadow: 2px 2px #000000;
 }
 
 p {
